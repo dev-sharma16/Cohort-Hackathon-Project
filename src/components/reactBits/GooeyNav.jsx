@@ -159,7 +159,7 @@ const GooeyNav = ({
             color: black; //TODO
           }
           .effect.filter {
-            filter: blur(7px) contrast(100) blur(0);
+            
             mix-blend-mode: lighten; //TODO
           }
           .effect.filter::before {
@@ -167,7 +167,7 @@ const GooeyNav = ({
             position: absolute;
             inset: -75px;
             z-index: -2;
-            background: black; //TODO
+            
           }
           .effect.filter::after {
             content: "";

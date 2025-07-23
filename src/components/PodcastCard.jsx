@@ -1,6 +1,18 @@
 const PodcastCard = ({ youtubeUrl, spotifyUrl }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 p-3 bg-gray-800 rounded-2xl">
+    <div 
+        className="flex flex-col items-center justify-center gap-3 p-3 bg-gray-800 rounded-2xl"
+        style={{ 
+            boxShadow: "0 0 7px 2px white",
+            transition: "box-shadow 0.3s ease-in-out",
+        }}
+        onMouseEnter={(e) =>
+        (e.currentTarget.style.boxShadow = "0 0 15px 5px white")
+        }
+        onMouseLeave={(e) =>
+            (e.currentTarget.style.boxShadow = "0 0 10px 3px white")
+        }
+    >
         <iframe
             width="370"
             height="220"

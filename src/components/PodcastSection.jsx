@@ -3,10 +3,10 @@ import PodcastCard from './PodcastCard';
 import TiltedCard from './reactBits/TiltedCard';
 
 const podcastData = [
-    {
-        youtubeUrl: "https://www.youtube.com/embed/BY2C3liFlU4?si=wm0A4DBNb8jzy7fV",
-        spotifyUrl: "https://open.spotify.com/episode/7tOR10zjFwMQSNr18oLKEf?si=5b59a3c21b784dfb",
-    },
+    // {
+    //     youtubeUrl: "https://www.youtube.com/embed/BY2C3liFlU4?si=wm0A4DBNb8jzy7fV",
+    //     spotifyUrl: "https://open.spotify.com/episode/7tOR10zjFwMQSNr18oLKEf?si=5b59a3c21b784dfb",
+    // },
     {
         youtubeUrl: "https://www.youtube.com/embed/MdeQMVBuGgY?si=3HCv2NxWGUhPx48n",
         spotifyUrl: "https://open.spotify.com/episode/2xKjdOoBlb1bEYh1yvnmGp?si=83915c8c0293472e",
@@ -26,13 +26,12 @@ function PodcastSection() {
         window.open("https://open.spotify.com/episode/7tOR10zjFwMQSNr18oLKEf?si=5b59a3c21b784dfb", "_blank");
     }
     return (
-        <div className=' bg-gray-900 py-2'>
-            <h2 className="text-3xl font-bold mb-6 text-center">Most Loved Podcasts</h2>
-            <div className='grid grid-cols-1 lg:grid-cols-2 w-[75%] items-center'>
+        <div className='bg-black flex flex-col items-center text-white '>
+            <h2 className="text-6xl font-semibold mb-8 text-center font-">Most Loved Podcasts</h2>
+            <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-[75%] items-center'>
                 {podcastData.map((podcast, index) => (
-                    <div key={index} className="flex justify-center items-center py-4 ">
+                    <div key={index} className="flex justify-center items-center  ">
                     <TiltedCard
-                        
                         imageSrc='null'
                         altText="null"
                         captionText="play Video"
@@ -56,8 +55,8 @@ function PodcastSection() {
                     </div>
                 ))}
             </div>
-                <div className="mt-8 text-center">
-                    <button className=" text-white underline hover:text-blue-400 text-3xl">
+                <div className="text-center mt-3 mb-15">
+                    <button className=" text-gray-400 underline hover:text-white text-3xl">
                         more on{" "}
                         <span
                             onClick={() =>
@@ -66,7 +65,16 @@ function PodcastSection() {
                                     "_blank"
                                 )
                             }
-                            className="cursor-pointer hover:underline text-red-500 text-5xl"
+                            className="cursor-pointer hover:underline text-red-500 text-4xl"
+                            style={{ 
+                                transition: "0.2s ease-in-out",
+                            }}
+                            onMouseEnter={(e) =>
+                            (e.currentTarget.style.fontSize = "45px")
+                            }
+                            onMouseLeave={(e) =>
+                                (e.currentTarget.style.fontSize = "35px")
+                            }
                         >
                             <i className="ri-youtube-fill"></i>
                         </span>{" "}
@@ -78,7 +86,16 @@ function PodcastSection() {
                                     "_blank"
                                 )
                             }
-                            className="cursor-pointer hover:underline text-green-400 text-5xl"
+                            className="cursor-pointer hover:underline text-green-400 text-4xl"
+                            style={{ 
+                                transition: "0.2s ease-in-out",
+                            }}
+                            onMouseEnter={(e) =>
+                            (e.currentTarget.style.fontSize = "45px")
+                            }
+                            onMouseLeave={(e) =>
+                                (e.currentTarget.style.fontSize = "30px")
+                            }
                         >
                             <i className="ri-spotify-fill"></i>
                         </span>

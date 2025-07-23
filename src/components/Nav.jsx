@@ -1,7 +1,6 @@
 import React from 'react'
 import GooeyNav from './reactBits/GooeyNav'
 
-// update with your own items
 const items = [
     { label: "Home", href: "/" },
     { label: "Courses", href: "/course" },
@@ -11,7 +10,8 @@ const items = [
 
 function Nav() {
     return (
-        <div className='w-screen flex items-center justify-center py-4 absolute'>
+        <div className='w-screen flex items-center justify-center py-4 fixed'>
+            <div className=' py-2 rounded-2xl backdrop-blur-md border-1'>
             <GooeyNav
                 items={items}
                 particleCount={15}
@@ -22,6 +22,7 @@ function Nav() {
                 timeVariance={300}
                 colors={[1, 2, 3, 1, 2, 3, 1, 4]}
             />
+            </div>
         </div>
     )
 }
