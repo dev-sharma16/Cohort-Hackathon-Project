@@ -10,8 +10,8 @@ const items = [
 
 function Nav() {
     return (
-        <div className='w-screen flex items-center justify-center py-4 fixed'>
-            <div className=' py-2 rounded-2xl backdrop-blur-md border-1'>
+        <div className='w-screen flex items-center justify-center py-4 fixed z-10'>
+            <div className=' py-2 rounded-2xl backdrop-blur-sm border-1'>
             <GooeyNav
                 items={items}
                 particleCount={15}

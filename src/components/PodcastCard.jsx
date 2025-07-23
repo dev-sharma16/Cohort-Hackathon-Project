@@ -1,9 +1,9 @@
 const PodcastCard = ({ youtubeUrl, spotifyUrl }) => {
   return (
     <div 
-        className="flex flex-col items-center justify-center gap-3 p-3 bg-gray-800 rounded-2xl"
+        className="flex flex-col items-center justify-center gap-3 p-3 backdrop-blur-lg rounded-2xl"
         style={{ 
-            boxShadow: "0 0 7px 2px white",
+            boxShadow: "0 0 5px 2px white",
             transition: "box-shadow 0.3s ease-in-out",
         }}
         onMouseEnter={(e) =>

@@ -11,11 +11,11 @@ const bkImages = [
 function BookSection() {
   return (
     <div className=" px-10 md:px-20 lg:px-40 xl:px-60 bg-black pt-10 pb-20">
-      <h2 className="text-6xl font-semibold mb-8 text-center text-white">
+      <h2 className="text-6xl font-semibold mb-22 text-center text-white">
         Build, <span className="line-through text-red-600">Don't</span> Talk
       </h2>
       
-      <div className="flex flex-col-reverse md:flex-row gap-5 px-4 py-4 justify-center items-center">
+      <div className="flex flex-col-reverse md:flex-row gap-5 px-4 py-4 justify-center items-center mb-25">
         {/* Left section */}
         <div className="bg-black rounded-2xl p-6 w-full md:w-[90%] text-white flex flex-col justify-center py-17">
           <h2 className="text-3xl font-bold mb-10">
