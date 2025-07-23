@@ -7,6 +7,7 @@ import Nav from './components/Nav'
 import Home from "./pages/Home";
 import Course from "./pages/Course";
 import About from "./pages/About";
+import BookDetails from './pages/BookDetails';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/course" element={<Course />} />
         <Route path="/about" element={<About />} />
+        <Route path="/book-details" element={<BookDetails/>} />
       </Routes>
     </div>
   )
