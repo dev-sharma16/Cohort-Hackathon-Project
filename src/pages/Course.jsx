@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../../public/2dcaec58-450a-0df9-7a18-1464f00bcf6a.jpeg"; // Update path if needed
+import { useNavigate } from "react-router";
 
 const attendees = [
   { icon: "ri-user-star-line", label: "Personal brands" },
@@ -11,6 +11,12 @@ const attendees = [
 ];
 
 function Course() {
+  const navigate = useNavigate();
+
+  const buyNowHandler = ()=>{
+    navigate('/register')
+  }
+
   return (
     <div className=" bg-black pt-33">
       <div className=" flex flex-col justify-center items-center px-10">
@@ -28,7 +34,7 @@ function Course() {
           <div className="relative w-full lg:w-1/2 flex justify-center">
             <div className="relative w-[250px] h-[250px] bg-yellow-400 rounded-full overflow-hidden flex items-end">
               <img
-                src={heroImg}
+                src='https://ik.imagekit.io/devsh16/Hackathon/Course%20Page%20assests/Picsart_25-07-23_00-08-01-392.png?updatedAt=1753368177683'
                 alt="Raj Shamani"
                 className="w-[80%] object-contain mx-auto"
               />
@@ -78,7 +84,10 @@ function Course() {
               </li>
             </ul>
 
-            <button className="mt-6 w-full bg-yellow-400 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition duration-300 shadow-md hover:scale-105 hover:shadow-amber-50 border">
+            <button
+              onClick={buyNowHandler}
+              className="mt-6 w-full bg-yellow-400 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition duration-300 shadow-md hover:scale-105 hover:shadow-amber-50 border"
+            >
               JOIN NOW FOR <span className="text-xl">₹99</span>
             </button>
             <p className="text-xs text-gray-400 mt-2 text-center">

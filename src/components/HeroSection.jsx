@@ -1,5 +1,4 @@
 import React from 'react'
-import LightRays from './reactBits/LightRays'
 
 function HeroSection() {
     return (
@@ -10,7 +9,7 @@ function HeroSection() {
                         <h2 className='text-8xl font-bold'>Shamani</h2>
                     </div>
                     <div className='bg-black min-w-[40%] overflow-x-hidden'>
-                        <img className='h-[100%] min-w-fit' src="public/Picsart_25-07-23_00-12-58-497.png" alt="" />
+                        <img className='h-[100%] min-w-fit' src="https://ik.imagekit.io/devsh16/Hackathon/Hero%20section%20assests/Picsart_25-07-23_00-12-58-497.png?updatedAt=1753368383069" alt="" />
                     </div>
                 </div>
             

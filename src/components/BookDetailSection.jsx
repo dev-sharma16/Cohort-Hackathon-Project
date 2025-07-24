@@ -3,9 +3,9 @@ import CustomCarousel from "./Carousel";
 import { Link } from "react-router";
 
 const bkImages = [
-  "public/generated-image (1).png",
-  "public/generated-image (2).png",
-  "public/generated-image.png",
+  "https://ik.imagekit.io/devsh16/Hackathon/Book%20carousel%20assests/generated-image.png?updatedAt=1753368511115",
+  "https://ik.imagekit.io/devsh16/Hackathon/Book%20carousel%20assests/generated-image%20(2).png?updatedAt=1753368510590",
+  "https://ik.imagekit.io/devsh16/Hackathon/Book%20carousel%20assests/generated-image%20(1).png?updatedAt=1753368510810",
 ];
 
 function BookDetailSection() {
