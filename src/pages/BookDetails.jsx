@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import BookDetailSection from '../components/BookDetailSection'
 import Testimonials from '../components/easyFrontend/Testimonials'
+import CopyRightSection from '../components/CopyRightSection'
 
 function BookDetails() {
     useEffect(() => {
@@ -10,6 +11,7 @@ function BookDetails() {
     <>
         <BookDetailSection/>
         <Testimonials/>
+        <CopyRightSection/>
     </>
   )
 }

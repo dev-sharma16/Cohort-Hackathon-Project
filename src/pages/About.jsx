@@ -1,7 +1,10 @@
 import React from 'react'
+import CopyRightSection from '../components/CopyRightSection'
+
 
 function About() {
   return (
+    <>
     <div className=' bg-black pt-25 px-10 md:px-20'>
       <h2 className="text-center text-5xl font-bold mb-20 mt-5 text-white">Raj Shamani</h2>
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 max-w-6xl mx-auto">
@@ -68,6 +71,8 @@ function About() {
         </div>
       </div>
     </div>
+    <CopyRightSection/>
+    </>
   )
 }
 

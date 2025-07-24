@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import CopyRightSection from '../components/CopyRightSection'
 
 const attendees = [
   { icon: "ri-user-star-line", label: "Personal brands" },
@@ -18,6 +19,7 @@ function Course() {
   }
 
   return (
+    <>
     <div className=" bg-black pt-33">
       <div className=" flex flex-col justify-center items-center px-10">
         <h2 className="text-xl font-semibold text-center lg:text-left">
@@ -50,7 +52,7 @@ function Course() {
               <li>
                 <span className="text-yellow-400 text-xl">
                   <i class="ri-checkbox-circle-line"></i>
-                </span>
+                </span>{" "}
                 Learn secrets to {" "}
                 <span className="font-bold text-yellow-400">
                   grow followers to 1 Million{" "}
@@ -61,13 +63,13 @@ function Course() {
                 <span className="text-yellow-400 text-xl">
                   <i class="ri-checkbox-circle-line"></i>
                 </span>
-                <span className="font-bold text-yellow-400">Go Viral</span>{" "}
+                <span className="font-bold text-yellow-400">{" "}Go Viral</span>{" "}
                 and become the next big influencer, brand and celebrity
               </li>
               <li>
                 <span className="text-yellow-400 text-xl">
                   <i class="ri-checkbox-circle-line"></i>
-                </span>
+                </span>{" "}
                 Learn to{" "}
                 <span className="font-bold text-yellow-400">
                   make money using your personal brand
@@ -88,9 +90,17 @@ function Course() {
               onClick={buyNowHandler}
               className="mt-6 w-full bg-yellow-400 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition duration-300 shadow-md hover:scale-105 hover:shadow-amber-50 border"
             >
-              JOIN NOW FOR <span className="text-xl">₹99</span>
+              ENROLE NOW FOR <span className="text-xl">₹99</span>
             </button>
-            <p className="text-xs text-gray-400 mt-2 text-center">
+            <button
+              onClick={()=>{navigate("/login")}}
+              className="mt-6 w-full  text-white hover:text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition duration-300 shadow-md hover:scale-105 hover:shadow-amber-50 border"
+            >
+              Already Enrolled, then{" "}
+              <span className="text-xl text-yellow-400 hover:text-yellow-900">Login</span>{" "}
+              to access the course
+            </button>
+            <p className="text-xs text-gray-400 mt-5 text-center">
               Start Language - Basic English.
             </p>
           </div>
@@ -158,6 +168,8 @@ function Course() {
         </section>        
       </div>
     </div>
+    <CopyRightSection/>
+    </>
   );
 }
 
