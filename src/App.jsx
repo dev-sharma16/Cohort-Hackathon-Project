@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Course from "./pages/Course";
 import About from "./pages/About";
 import BookDetails from './pages/BookDetails';
+import CopyRightSection from './components/CopyRightSection';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/book-details" element={<BookDetails/>} />
       </Routes>
+      <CopyRightSection/>
     </div>
   )
 }
