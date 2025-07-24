@@ -18,12 +18,12 @@ const LoginForm = () => {
 
     const onSubmit = async (data) => {
         console.log("Form Data:", data);
-        const {name,email,password} = data
+        const {email,password} = data
         const isUserlogined = await authService.loginAccount(email,password)
         console.log(isUserlogined);
         dispatch(setUser(isUserlogined.currentUser))
         reset();
-        navigate('/course/course-details')
+        navigate('/course/payment-gateway')
     };
 
     return (
@@ -67,16 +67,16 @@ const LoginForm = () => {
                 type="submit"
                 className="w-full bg-yellow-400 text-black py-2 rounded hover:bg-yellow-500 transition duration-300 shadow-md hover:scale-105 hover:shadow-amber-50 border"
             >
-                Register
+                Login
             </button>
             
             <p className="mt-4 text-center text-md">
-                Already have an account?{" "}
+                Don't have an account?{" "}
                 <span
                     className="text-yellow-400 cursor-pointer hover:underline"
-                    onClick={() => navigate("/login")}
+                    onClick={() => navigate("/register")}
                 >
-                    Login
+                    Register
                 </span>
             </p>
         </form>

@@ -8,6 +8,7 @@ import Login from "../pages/Login";
 import CourseDetails from "../pages/CourseDetails";
 import PublicRoute from "./PublicRoute";
 import ProtectedRoute from "./ProtectedRoute";
+import PaymentGateway from "../pages/PaymentGateway";
 
 const AppRoutes = () => {
     return (
@@ -27,11 +28,18 @@ const AppRoutes = () => {
             } />
 
             <Route path="/login" element={
-                <PublicRoute><Login /></PublicRoute> //? only non logined user can access this page
+                // <PublicRoute><Login /></PublicRoute> //? only non logined user can access this page
+                <Login /> 
+
             } />
 
             <Route path="/course/course-details" element={
-                <ProtectedRoute><CourseDetails /></ProtectedRoute> //? only logined user can access this page
+                // <ProtectedRoute><CourseDetails /></ProtectedRoute> //? only logined user can access this page
+                <CourseDetails /> 
+            } />
+
+            <Route path="/course/payment-gateway" element={
+                <PaymentGateway />
             } />
         </Routes>
     );

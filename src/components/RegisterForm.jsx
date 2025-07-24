@@ -17,7 +17,7 @@ const RegisterForm = () => {
         const isUserCreated = await authService.createAccount(email,password,name)
         console.log(isUserCreated);
         reset();
-        navigate('/login')
+        navigate('/course')
     };
 
     return (
