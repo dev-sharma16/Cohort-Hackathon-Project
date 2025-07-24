@@ -9,7 +9,8 @@ import { useDispatch } from "react-redux";
 
 const CourseCard = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+
   const handleGoToClassroom = () => {
     toast.success("Redirecting to Classroom...");
     // simulate navigation or use navigate("/classroom") if using React Router

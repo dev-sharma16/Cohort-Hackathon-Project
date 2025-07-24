@@ -30,7 +30,7 @@ function PodcastSection() {
                 {podcastData.map((podcast, index) => (
                     <div key={index} className="flex justify-center items-center  ">
                     <TiltedCard
-                        imageSrc='public/Screenshot 2025-07-23 192623.png'
+                        imageSrc='https://ik.imagekit.io/devsh16/Hackathon/Screenshot%202025-07-23%20192623.png?updatedAt=1753376119729'
                         altText="null"
                         captionText="play Video"
                         containerHeight="400px"
